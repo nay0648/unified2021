@@ -1,1 +1,10 @@
-# unified2021
+# A UNIFIED SPEECH ENHANCEMENT FRONT-END FOR ONLINE DEREVERBERATION, ACOUSTIC ECHO CANCELLATION, AND SOURCE SEPARATION
+
+Yueyue Na, Ziteng Wang, Zhang Liu, Yun Li, Gang Qiao, Biao Tian, Qiang Fu
+
+Machine Intelligence Technology, Alibaba Group
+
+{yueyue.nyy, ziteng.wzt, yinan.lz, yl.yy, songjiang.qg, tianbiao.tb, fq153277}@alibaba-inc.com
+
+# ABSTRACT
+Dereverberation (DR), acoustic echo cancellation (AEC), and blind source separation (BSS) are the three most important submodules in speech enhancement front-end. In traditional systems, the three submodules work independently in a sequential manner, each submodule has its own objective function and optimization policy. Although this architecture has high flexibility, the speech enhancement performance is restricted, since each submodule's optimum cannot guarantee the entire system's global optimum. In this paper, a unified signal model is derived to perform DR, AEC, and BSS together, and the online auxiliary-function based independent component/vector analysis (Aux-ICA/IVA) techniques are used to solve the problem. The proposed approach has unified objective function and optimization policy, the performance improvement is verified by simulated experiments.
