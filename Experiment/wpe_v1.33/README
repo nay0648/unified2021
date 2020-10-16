@@ -1,0 +1,94 @@
+%%
+%% ======================================================================
+%%
+%% README file for WPE dereverberation evaluation tool
+%%
+%% Copyright (c) 2015 Nippon Telegraph and Telephone corporation (NTT).
+%% All rights reserved.
+%% By Takuya Yoshioka, Marc Delcroix, 24-06-2015.
+%% ======================================================================
+%%
+
+The tools and program included in this package are designed and distributed for 
+the evaluation of the weighted prediction error (WPE) based dereverberation algorithm. 
+This program can be used only for evaluation purpose. Please refer to the license file for details. 
+
+Please cite the following paper when you publish results obtained using this tool.
+
+  Tomohiro Nakatani, Takuya Yoshioka, Keisuke Kinoshita, Masato Miyoshi, and Biing-Hwang Juang, 
+  "Speech dereverberation based on variance-normalized delayed linear prediction," 
+  IEEE Transactions on Audio, Speech, and Language Processing, vol. 18, no. 7, pp. 1717-1731, Sep. 2010.
+
+In addition, below is a list of related papers:
+
+  Takuya Yoshioka, Tomohiro Nakatani, and Masato Miyoshi, 
+  "Integrated speech enhancement method using noise suppression and dereverberation," 
+  IEEE Transactions on Audio, Speech and Language Processing, vol. 17, no. 2, pp. 231-246, Feb. 2009.
+
+  Takuya Yoshioka, Tomohiro Nakatani, Masato Miyoshi, and Hiroshi G. Okuno, 
+  "Blind separation and dereverberation of speech mixtures by joint optimization," 
+  IEEE Transactions on Audio, Speech, and Language Processing, vol. 19, no. 1, pp. 69-84, Jan. 2011.
+
+  Takuya Yoshioka and Tomohiro Nakatani, 
+  "Generalization of multi-channel linear prediction methods for blind MIMO impulse response shortening," 
+  IEEE Transactions on Audio, Speech, and Language Processing, vol. 20, no. 10, pp. 2707-2720, Dec. 2012.
+
+  Marc Delcroix, Takuya Yoshioka, Atsunori Ogawa, Yotaro Kubo, Masakiyo Fujimoto, Ito Nobutaka, 
+  Keisuke Kinoshita, Miquel Espi, Takaaki Hori, Tomohiro Nakatani, and Atsushi Nakamura, 
+  "Linear prediction-based dereverberation with advanced speech enhancement and recognition 
+  technologies for the REVERB challenge," 
+  in Proceedings of the 2014 REVERB Workshop, May 2014.
+
+  Takuya Yoshioka and Mark J. F. Gales, 
+  "Environmentally robust ASR front-end for deep neural network acoustic models," 
+  Computer Speech and Language, vol. 31, no. 1, pp. 65-86, May 2015.
+
+
+Before starting, please read carefully the license file and the following,
+   - The package includes a MATLAB pcode version of the WPE algorithm (wpe.p). 
+   - wpe.p can only be used with MATLAB and cannot be compiled. 
+   - To run wpe.p on MATLAB you need the signal processing toolbox.
+   - The current version of wpe.p will expire within a year. 
+   - Contact us to obtain a renewed version of the code if you wish 
+     to continue evaluation of WPE after expiration.
+   - Note that NTT may stop releasing this code at any time without prior notice.
+
+
+In this package you will find the following
+   (1) The license file (license.txt)
+   (2) A MATLAB pcode version of the WPE algorithm (wpe.p and wpe_wavio.p)
+       wpe.p inputs and outputs MATLAB matrices.
+       wpe_wavio.p inputs and outputs wav files.
+   (3) A sample script describing how to use wpe.p (wpe_test.m and wpe_test_wavio.m)
+   (4) Setting files including 
+       - settings/local.m which is a configuration file for wpe.p
+       - settings/sample.scp which is an sample task file for use in wpe_test.m
+       - settings/arrayname.lst which includes the naming convention for reading 
+         multi-microphone data in wpe_test.m
+   (5) Sample data in wav_sample/sample_ch1.wav ~ wav_sample/sample_ch8.wav
+
+
+For any inquiries, please contact us at wpe-qa@lab.ntt.co.jp.
+
+This package contains the following files:
+wpe_v1.33/
+|-- settings
+|   |-- arrayname.lst
+|   |-- local.m
+|   `-- sample.scp
+|-- wav_sample
+|   |-- sample_ch1.wav
+|   |-- sample_ch2.wav
+|   |-- sample_ch3.wav
+|   |-- sample_ch4.wav
+|   |-- sample_ch5.wav
+|   |-- sample_ch6.wav
+|   |-- sample_ch7.wav
+|   `-- sample_ch8.wav
+|-- README
+|-- license.txt
+|-- wpe.p
+|-- wpe_test.m
+|-- wpe_test_wavio.m
+`-- wpe_wavio.p
+2 directories, 17 files

@@ -1,0 +1,7 @@
+
+This is a port of Speex Codec AEC algorithm to Matlab.
+Jean-Marc says it could be useful to people in the speex-dev mailing list, so enjoy!
+I made sure we stay 100% compatible with the output from mdf.c.
+This is tested for one channel, and doesn't contain the non-linear processing.
+
+Jonathan
