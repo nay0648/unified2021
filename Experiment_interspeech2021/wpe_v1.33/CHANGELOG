@@ -1,0 +1,21 @@
+2015-10-21, Version 1.20
+  Initial release of the package. 
+
+2015-11-06, Version 1.21
+  Fixed  : Fix a processing failure occuring when opt_blk_sz is 0. 
+  Changed: Show an error message when a filter is longer than a processing block size.
+
+2016-03-31, Version 1.22
+  New feature: Make it possible to disable LPC modeling of short-time speech frames when ssd_param.speech_order is inf. 
+
+2016-09-08, Version 1.30
+  Extend the expiry date by one year. 
+
+2017-10-10, Version 1.31
+  Extend the expiry date by one year. Modified the README file.
+
+2018-1-11, Version 1.32
+  Replaced wavread/wavwrite functions with audioread/audiowrite functions to make the package compatible with new Matlab versions.
+
+2018-1-11, Version 1.33
+  Extend the expiry date.
